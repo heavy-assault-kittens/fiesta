@@ -1,4 +1,3 @@
 # Project Fiesta
 
-This is (or will be) a game show with a video game theme. It is inspired by the
-show hosted by The Runaway Guys, *Thrown Controllers*.
+This is going to be a game show with a video game theme, inspired by *Thrown Controllers*. It will be made in either RPG Maker (like *Thrown Controllers* was) or Godot.
