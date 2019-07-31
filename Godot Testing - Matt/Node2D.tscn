@@ -1,3 +1,19 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Find Mii.png" type="Texture" id=1]
+[ext_resource path="res://Game Challenge.png" type="Texture" id=2]
+[ext_resource path="res://Fatal Frame.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Find Mii" type="Sprite" parent="."]
+position = Vector2( 873.497, 559.269 )
+texture = ExtResource( 1 )
+
+[node name="Game Challenge" type="Sprite" parent="."]
+position = Vector2( 145.931, 568.017 )
+texture = ExtResource( 2 )
+
+[node name="Fatal Frame" type="Sprite" parent="."]
+position = Vector2( 877.813, 45.3658 )
+texture = ExtResource( 3 )
