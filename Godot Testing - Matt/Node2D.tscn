@@ -7,13 +7,14 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Find Mii" type="Sprite" parent="."]
-position = Vector2( 873.497, 559.269 )
+position = Vector2( 878.809, 564.581 )
 texture = ExtResource( 1 )
 
 [node name="Game Challenge" type="Sprite" parent="."]
-position = Vector2( 145.931, 568.017 )
+position = Vector2( 143.654, 566.499 )
 texture = ExtResource( 2 )
 
 [node name="Fatal Frame" type="Sprite" parent="."]
-position = Vector2( 877.813, 45.3658 )
+position = Vector2( 866.753, 34.5147 )
+scale = Vector2( 1.07681, 1 )
 texture = ExtResource( 3 )
