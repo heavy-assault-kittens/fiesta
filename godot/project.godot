@@ -17,16 +17,12 @@ _global_script_class_icons={
 
 config/name="Project Fiesta"
 run/main_scene="res://HP_Screen.tscn"
+boot_splash/image="res://Images/Splash Screen.png"
 config/icon="res://icon.png"
 
 [display]
 
 window/stretch/mode="2d"
-
-[gui]
-
-theme/custom="res://DefaultTheme.tres"
-theme/custom_font="res://DefaultFont.tres"
 
 [rendering]
 
