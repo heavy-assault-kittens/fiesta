@@ -80,3 +80,4 @@ theme = ExtResource( 3 )
 text = "How Much HP?"
 align = 1
 valign = 1
+[connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
