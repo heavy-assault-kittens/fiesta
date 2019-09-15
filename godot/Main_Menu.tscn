@@ -56,3 +56,4 @@ __meta__ = {
 "_edit_lock_": true
 }
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
+[connection signal="ready" from="." to="." method="_when_Node_ready_"]

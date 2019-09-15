@@ -1,26 +1,24 @@
 extends Node
 
-var a = 0
-var easy = 1
-var cruel = 2
-var multiple = 3
-var audio = 4
-var picture = 5
-var mii = 6
-onready var first_button = get_node("Button")
-
+var words = []
 
 func _on_Node_ready():
-	a = randi()%7 + 1
-	if a == easy:
-		print ("Easy Question")
-	elif a == cruel:
-		print ("Cruel Question")
-	elif a == multiple:
-		print ("Multiple Choice")
-	elif a == audio:
-		print ("Rythem Hero")
-	elif a == picture:
-		print ("Fatal Frame")
-	elif a == mii:
-		print ("Find Mii")
+	words.append ("Easy Question")
+	words.append ("Cruel Question")
+	words.append ("Multiple Choice")
+	words.append ("Fatal Frame")
+	words.append ("Game Challenge")
+	words.append ("Rythem Hero")
+	words.append ("Find Mii")
+	$Button.text = words[randi() % words.size()]
+
+
+func _when_Node_ready_():
+	words.append ("Easy Question")
+	words.append ("Cruel Question")
+	words.append ("Multiple Choice")
+	words.append ("Fatal Frame")
+	words.append ("Game Challenge")
+	words.append ("Rythem Hero")
+	words.append ("Find Mii")
+	$Button2.text = words[randi() % words.size()]
