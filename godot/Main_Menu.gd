@@ -1,8 +1,8 @@
 extends Node
 
-var words = []
-
 func _on_Node_ready():
+	randomize()
+	var words = []
 	words.append ("Easy Question")
 	words.append ("Cruel Question")
 	words.append ("Multiple Choice")
@@ -10,10 +10,13 @@ func _on_Node_ready():
 	words.append ("Game Challenge")
 	words.append ("Rythem Hero")
 	words.append ("Find Mii")
-	$Button.text = words[randi() % words.size()]
+	var word_index = randi() % words.size()
+	$Button.text = words[word_index]
 
 
 func _when_Node_ready_():
+	randomize()
+	var words = []
 	words.append ("Easy Question")
 	words.append ("Cruel Question")
 	words.append ("Multiple Choice")
@@ -21,4 +24,5 @@ func _when_Node_ready_():
 	words.append ("Game Challenge")
 	words.append ("Rythem Hero")
 	words.append ("Find Mii")
-	$Button2.text = words[randi() % words.size()]
+	var word_index = randi() % words.size()
+	$Button2.text = words[word_index]
