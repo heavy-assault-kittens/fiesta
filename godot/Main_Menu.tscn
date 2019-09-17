@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Main_Menu.gd" type="Script" id=1]
 [ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
 [ext_resource path="res://HeaderTheme.tres" type="Theme" id=3]
 [ext_resource path="res://Label.gd" type="Script" id=4]
 [ext_resource path="res://DefaultTheme.tres" type="Theme" id=5]
-[ext_resource path="res://Button.gd" type="Script" id=6]
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -35,18 +34,17 @@ margin_right = 1009.0
 margin_bottom = 41.0
 text = "Score: 0"
 
-[node name="Button" type="Button" parent="."]
+[node name="Catagory_1" type="Button" parent="."]
 margin_left = 24.0
 margin_top = 460.0
 margin_right = 510.0
 margin_bottom = 507.0
 theme = ExtResource( 5 )
-script = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Button2" type="Button" parent="."]
+[node name="Catagory_2" type="Button" parent="."]
 margin_left = 516.0
 margin_top = 460.0
 margin_right = 1000.0
@@ -57,3 +55,5 @@ __meta__ = {
 }
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
 [connection signal="ready" from="." to="." method="_when_Node_ready_"]
+[connection signal="pressed" from="Catagory_1" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Catagory_2" to="." method="_on_Button2_pressed"]

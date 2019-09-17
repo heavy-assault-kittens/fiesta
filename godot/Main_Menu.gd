@@ -11,8 +11,7 @@ func _on_Node_ready():
 	words.append ("Rythem Hero")
 	words.append ("Find Mii")
 	var word_index = randi() % words.size()
-	$Button.text = words[word_index]
-
+	$Catagory_1.text = words[word_index]
 
 func _when_Node_ready_():
 	randomize()
@@ -25,4 +24,16 @@ func _when_Node_ready_():
 	words.append ("Rythem Hero")
 	words.append ("Find Mii")
 	var word_index = randi() % words.size()
-	$Button2.text = words[word_index]
+	$Catagory_2.text = words[word_index]
+
+func _on_Button_pressed():
+	if $Catagory_1.text == ("Easy Question"):
+		get_tree().change_scene("res://Easy_Question.tscn")
+	elif $Catagory_2.text == ("Cruel Question"):
+		get_tree().change_scene("res://Cruel_Question.tscn")
+
+func _on_Button2_pressed():
+	if $Catagory_1.text == ("Easy Question"):
+		get_tree().change_scene("res://Easy_Question.tscn")
+	elif $Catagory_2.text == ("Cruel Question"):
+		get_tree().change_scene("res://Cruel_Question.tscn")
