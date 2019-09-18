@@ -31,6 +31,7 @@ margin_left = 100.0
 margin_top = 492.0
 margin_right = 924.0
 margin_bottom = 592.0
+rect_min_size = Vector2( 824, 100 )
 theme = ExtResource( 4 )
 custom_constants/hseparation = 4
 columns = 2
@@ -59,11 +60,13 @@ custom_constants/hseparation = 650
 columns = 2
 
 [node name="Lives" type="Label" parent="GridContainer2"]
+visible = false
 margin_right = 112.0
 margin_bottom = 59.0
 text = "Lives:"
 
 [node name="Score" type="Label" parent="GridContainer2"]
+visible = false
 margin_left = 762.0
 margin_right = 885.0
 margin_bottom = 59.0
@@ -80,13 +83,16 @@ custom_constants/hseparation = 750
 columns = 2
 
 [node name="Lives_Marker" type="Label" parent="GridContainer3"]
+visible = false
 margin_right = 24.0
 margin_bottom = 59.0
 text = "0"
 
 [node name="Score_Marker" type="Label" parent="GridContainer3"]
+visible = false
 margin_left = 774.0
 margin_right = 774.0
 margin_bottom = 59.0
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
 [connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]

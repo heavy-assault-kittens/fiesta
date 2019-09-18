@@ -11,3 +11,9 @@ func _on_Node_ready():
 	words.append ("In 1992, Nintendo of America purchased a baseball team, perhaps because of baseball's popularity in both the United States and Japan. What was the name of the team, and what year did Nintendo sell it?")
 	var word_index = randi() % words.size()
 	$Label.text = words[word_index]
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Main_Menu.tscn")
+
+func _on_Button2_pressed():
+	get_tree().change_scene("res://Main_Menu.tscn")

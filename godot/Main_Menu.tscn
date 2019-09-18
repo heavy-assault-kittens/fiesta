@@ -23,14 +23,15 @@ custom_constants/hseparation = 720
 columns = 2
 
 [node name="Label" type="Label" parent="GridContainer"]
+visible = false
 margin_right = 124.0
 margin_bottom = 41.0
 text = "Lives: "
 script = ExtResource( 4 )
 
 [node name="Label2" type="Label" parent="GridContainer"]
-margin_left = 844.0
-margin_right = 1009.0
+visible = false
+margin_right = 165.0
 margin_bottom = 41.0
 text = "Score: 0"
 
@@ -53,6 +54,14 @@ theme = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Label" type="Label" parent="."]
+margin_left = 170.436
+margin_top = 168.603
+margin_right = 851.436
+margin_bottom = 227.603
+theme = ExtResource( 5 )
+text = "Please Choose A Category Below!"
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
 [connection signal="ready" from="." to="." method="_when_Node_ready_"]
 [connection signal="pressed" from="Catagory_1" to="." method="_on_Button_pressed"]

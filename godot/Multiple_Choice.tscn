@@ -1,0 +1,148 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Multiple_Choice.gd" type="Script" id=1]
+[ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=3]
+[ext_resource path="res://HeaderTheme.tres" type="Theme" id=4]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Backdrop" type="Sprite" parent="."]
+position = Vector2( 510, 300 )
+scale = Vector2( 0.535, 0.56 )
+texture = ExtResource( 2 )
+
+[node name="Question" type="Label" parent="."]
+margin_left = 100.0
+margin_top = 85.0
+margin_right = 924.0
+margin_bottom = 385.0
+rect_min_size = Vector2( 824, 300 )
+theme = ExtResource( 3 )
+text = "Sample Text"
+autowrap = true
+
+[node name="Pokemon" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Shedinja" type="Button" parent="Pokemon"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Greninja" type="Button" parent="Pokemon"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Accelgor" type="Button" parent="Pokemon"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Mothin" type="Button" parent="Pokemon"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Star_Fox" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Immelmann" type="Button" parent="Star_Fox"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Snap" type="Button" parent="Star_Fox"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Aileron" type="Button" parent="Star_Fox"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Inside" type="Button" parent="Star_Fox"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Splatoon_2" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Wet" type="Button" parent="Splatoon_2"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Bottom" type="Button" parent="Splatoon_2"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Ink" type="Button" parent="Splatoon_2"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Squid" type="Button" parent="Splatoon_2"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Wrong_Answer" type="Label" parent="."]
+margin_left = 362.0
+margin_right = 662.0
+margin_bottom = 41.0
+theme = ExtResource( 4 )
+[connection signal="ready" from="." to="." method="_on_Node_ready"]
+[connection signal="pressed" from="Pokemon/Shedinja" to="." method="_on_Shedinja_pressed"]
+[connection signal="pressed" from="Pokemon/Greninja" to="." method="_on_Greninja_pressed"]
+[connection signal="pressed" from="Pokemon/Accelgor" to="." method="_on_Accelgor_pressed"]
+[connection signal="pressed" from="Pokemon/Mothin" to="." method="_on_Mothin_pressed"]
+[connection signal="pressed" from="Star_Fox/Immelmann" to="." method="_on_Immelmann_pressed"]
+[connection signal="pressed" from="Star_Fox/Snap" to="." method="_on_Snap_pressed"]
+[connection signal="pressed" from="Star_Fox/Aileron" to="." method="_on_Aileron_pressed"]
+[connection signal="pressed" from="Star_Fox/Inside" to="." method="_on_Inside_pressed"]
+[connection signal="pressed" from="Splatoon_2/Wet" to="." method="_on_Wet_pressed"]
+[connection signal="pressed" from="Splatoon_2/Bottom" to="." method="_on_Bottom_pressed"]
+[connection signal="pressed" from="Splatoon_2/Ink" to="." method="_on_Ink_pressed"]
+[connection signal="pressed" from="Splatoon_2/Squid" to="." method="_on_Squid_pressed"]

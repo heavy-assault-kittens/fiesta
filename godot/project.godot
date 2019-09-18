@@ -16,9 +16,10 @@ _global_script_class_icons={
 [application]
 
 config/name="Project Fiesta"
-run/main_scene="res://HP_Screen.tscn"
-boot_splash/image="res://Images/Splash Screen.png"
-config/icon="res://icon.png"
+run/main_scene="res://Main_Menu.tscn"
+boot_splash/image="res://Images/Button_Mashers.png"
+boot_splash/bg_color=Color( 0.329412, 0.0862745, 0.513726, 1 )
+config/icon="res://Images/button_mashers.ico"
 
 [display]
 

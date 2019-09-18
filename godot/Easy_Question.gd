@@ -16,6 +16,11 @@ func _on_Node_ready():
 
 func score_update():
 	score += 1
+	return str(score)
 
 func _on_Button_pressed():
 	$GridContainer3/Score_Marker.text = score_update()
+	get_tree().change_scene("res://Main_Menu.tscn")
+
+func _on_Button2_pressed():
+	get_tree().change_scene("res://Main_Menu.tscn")

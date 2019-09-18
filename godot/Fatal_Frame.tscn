@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Node.gd" type="Script" id=1]
+[ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
+[ext_resource path="res://Images/Fatal Frame.png" type="Texture" id=3]
+[ext_resource path="res://Images/Ace_Attorney.jpg" type="Texture" id=4]
+[ext_resource path="res://Images/Persona_5_Menu.jpeg" type="Texture" id=5]
+[ext_resource path="res://Images/Bulky_Ann.png" type="Texture" id=6]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=7]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Backdrop" type="Sprite" parent="."]
+position = Vector2( 510, 300 )
+scale = Vector2( 0.535, 0.56 )
+texture = ExtResource( 2 )
+
+[node name="Fatal Frame" type="Sprite" parent="."]
+position = Vector2( 510, 35 )
+texture = ExtResource( 3 )
+
+[node name="Ace_Attorney" type="Sprite" parent="."]
+visible = false
+position = Vector2( 510, 275 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Persona_5_Menu" type="Sprite" parent="."]
+visible = false
+position = Vector2( 510, 275 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="Bulky_Ann" type="Sprite" parent="."]
+visible = false
+position = Vector2( 510, 275 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 100.0
+margin_top = 492.0
+margin_right = 924.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 824, 100 )
+theme = ExtResource( 7 )
+columns = 2
+
+[node name="Button" type="Button" parent="GridContainer"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+text = "Correct"
+
+[node name="Button2" type="Button" parent="GridContainer"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+text = "Incorrect"
+[connection signal="ready" from="." to="." method="_on_Node_ready"]
+[connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]

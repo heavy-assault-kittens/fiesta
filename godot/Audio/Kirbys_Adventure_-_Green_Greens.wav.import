@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kirbys_Adventure_-_Green_Greens.wav-3a5fd436e3ca27584cd423c4624ed270.sample"
+
+[deps]
+
+source_file="res://Audio/Kirbys_Adventure_-_Green_Greens.wav"
+dest_files=[ "res://.import/Kirbys_Adventure_-_Green_Greens.wav-3a5fd436e3ca27584cd423c4624ed270.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

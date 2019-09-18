@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Rythem_Heaven.gd" type="Script" id=1]
+[ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
+[ext_resource path="res://Audio/Super_Mario_Bros_3_-_P-Switch.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audio/Kirbys_Adventure_-_Green_Greens.wav" type="AudioStream" id=4]
+[ext_resource path="res://Audio/Duck_Tales_Moon.wav" type="AudioStream" id=5]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=6]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Backdrop" type="Sprite" parent="."]
+position = Vector2( 510, 300 )
+scale = Vector2( 0.535, 0.56 )
+texture = ExtResource( 2 )
+
+[node name="P_Switch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Green_Greens" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="The_Moon" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 402.0
+margin_top = 250.0
+margin_right = 623.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 221, 100 )
+theme = ExtResource( 6 )
+text = "Play Audio"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 200.0
+margin_top = 91.632
+margin_right = 827.0
+margin_bottom = 150.632
+theme = ExtResource( 6 )
+text = "What Game Is This Sound From"
+align = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 100.0
+margin_top = 492.0
+margin_right = 420.0
+margin_bottom = 557.0
+rect_min_size = Vector2( 824, 100 )
+theme = ExtResource( 6 )
+columns = 2
+
+[node name="Button" type="Button" parent="GridContainer"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+text = "Correct"
+
+[node name="Button2" type="Button" parent="GridContainer"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+text = "Incorrect"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="GridContainer/Button" to="." method="_when_Button_pressed"]
+[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]

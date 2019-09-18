@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Super_Mario_Bros_3_-_P-Switch.wav-c1e48cd95dd8d4fee2dc8e6d0dc96f7f.sample"
+
+[deps]
+
+source_file="res://Audio/Super_Mario_Bros_3_-_P-Switch.wav"
+dest_files=[ "res://.import/Super_Mario_Bros_3_-_P-Switch.wav-c1e48cd95dd8d4fee2dc8e6d0dc96f7f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
