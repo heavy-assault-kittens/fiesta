@@ -20,13 +20,13 @@ texture = ExtResource( 2 )
 position = Vector2( 510, 35 )
 texture = ExtResource( 3 )
 
-[node name="Ace_Attorney" type="Sprite" parent="."]
+[node name="Ace" type="Sprite" parent="."]
 visible = false
 position = Vector2( 510, 275 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
-[node name="Persona_5_Menu" type="Sprite" parent="."]
+[node name="Persona_Menu" type="Sprite" parent="."]
 visible = false
 position = Vector2( 510, 275 )
 scale = Vector2( 0.5, 0.5 )

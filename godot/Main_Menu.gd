@@ -8,7 +8,7 @@ func _on_Node_ready():
 	words.append ("Multiple Choice")
 	words.append ("Fatal Frame")
 	words.append ("Game Challenge")
-	words.append ("Rythem Heaven")
+	words.append ("Rhythm Heaven")
 	#words.append ("Find Mii")
 	var word_index = randi() % words.size()
 	$Catagory_1.text = words[word_index]
@@ -21,7 +21,7 @@ func _when_Node_ready_():
 	words.append ("Multiple Choice")
 	words.append ("Fatal Frame") #demo ready
 	words.append ("Game Challenge") #demo ready
-	words.append ("Rythem Heaven") #demo ready
+	words.append ("Rhythm Heaven") #demo ready
 	#words.append ("Find Mii")
 	var word_index = randi() % words.size()
 	$Catagory_2.text = words[word_index]
@@ -31,7 +31,7 @@ func _on_Button_pressed():
 		get_tree().change_scene("res://Easy_Question.tscn")
 	elif $Catagory_1.text == ("Cruel Question"):
 		get_tree().change_scene("res://Cruel_Question.tscn")
-	elif $Catagory_1.text == ("Rythem Heaven"):
+	elif $Catagory_1.text == ("Rhythm Heaven"):
 		get_tree().change_scene("res://Rythem_Heaven.tscn")
 	elif $Catagory_1.text == ("Fatal Frame"):
 		get_tree().change_scene("res://Fatal_Frame.tscn")
@@ -45,7 +45,7 @@ func _on_Button2_pressed():
 		get_tree().change_scene("res://Easy_Question.tscn")
 	elif $Catagory_2.text == ("Cruel Question"):
 		get_tree().change_scene("res://Cruel_Question.tscn")
-	elif $Catagory_2.text == ("Rythem Heaven"):
+	elif $Catagory_2.text == ("Rhythm Heaven"):
 		get_tree().change_scene("res://Rythem_Heaven.tscn")
 	elif $Catagory_2.text == ("Fatal Frame"):
 		get_tree().change_scene("res://Fatal_Frame.tscn")

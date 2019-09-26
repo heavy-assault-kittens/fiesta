@@ -15,14 +15,6 @@ func _on_Node_ready():
 		$Pokemon/Accelgor.text = ("Accelgor")
 		$Pokemon/Mothin.text = ("Mothim")
 		$Pokemon.show()
-	elif text == fox:
-		print("fox")
-		$Question.text = ("In Star Fox 64, Peppy tells you to Do a barrel roll! However, pilots in real life use a completely different name for the maneuver. What is the actual name of this maneuver?")
-		$Star_Fox/Immelmann.text = ("Immelmann turn")
-		$Star_Fox/Snap.text = ("Snap roll")
-		$Star_Fox/Aileron.text = ("Aileron Roll")
-		$Star_Fox/Inside.text = ("Inside Loop")
-		$Star_Fox.show()
 	elif text == Ink:
 		print("ink")
 		$Question.text = ("Which of these is a clothing brand in the Splatoon games?")
@@ -31,6 +23,14 @@ func _on_Node_ready():
 		$Splatoon_2/Ink.text = ("Ink Theory")
 		$Splatoon_2/Squid.text = ("Squid Force")
 		$Splatoon_2.show()
+	elif text == fox:
+		print("fox")
+		$Question.text = ("In Star Fox 64, Peppy tells you to Do a barrel roll! However, pilots in real life use a completely different name for the maneuver. What is the actual name of this maneuver?")
+		$Star_Fox/Immelmann.text = ("Immelmann turn")
+		$Star_Fox/Snap.text = ("Snap roll")
+		$Star_Fox/Aileron.text = ("Aileron Roll")
+		$Star_Fox/Inside.text = ("Inside Loop")
+		$Star_Fox.show()
 
 func _on_Shedinja_pressed():
 	get_tree().change_scene("res://Main_Menu.tscn")
