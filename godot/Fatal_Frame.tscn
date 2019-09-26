@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Node.gd" type="Script" id=1]
 [ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
@@ -6,7 +6,10 @@
 [ext_resource path="res://Images/Ace_Attorney.jpg" type="Texture" id=4]
 [ext_resource path="res://Images/Persona_5_Menu.jpeg" type="Texture" id=5]
 [ext_resource path="res://Images/Bulky_Ann.png" type="Texture" id=6]
-[ext_resource path="res://DefaultTheme.tres" type="Theme" id=7]
+[ext_resource path="res://Images/Lan.png" type="Texture" id=7]
+[ext_resource path="res://Images/Polite.jpeg" type="Texture" id=8]
+[ext_resource path="res://Images/Slug.png" type="Texture" id=9]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=10]
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -38,13 +41,30 @@ position = Vector2( 510, 275 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
 
+[node name="Lan" type="Sprite" parent="."]
+visible = false
+position = Vector2( 490.757, 285.08 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="Polite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 505.391, 284.056 )
+texture = ExtResource( 8 )
+
+[node name="Slug" type="Sprite" parent="."]
+visible = false
+position = Vector2( 490.73, 274.893 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+
 [node name="GridContainer" type="GridContainer" parent="."]
 margin_left = 100.0
 margin_top = 492.0
 margin_right = 924.0
 margin_bottom = 592.0
 rect_min_size = Vector2( 824, 100 )
-theme = ExtResource( 7 )
+theme = ExtResource( 10 )
 columns = 2
 
 [node name="Button" type="Button" parent="GridContainer"]
