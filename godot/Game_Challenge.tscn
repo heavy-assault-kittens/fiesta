@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Game_Challenge.gd" type="Script" id=1]
 [ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
@@ -9,7 +9,27 @@
 [ext_resource path="res://Images/Bomberman_R_Box_Art.jpg" type="Texture" id=7]
 [ext_resource path="res://Images/Splatoon_2_Box_Art.jpg" type="Texture" id=8]
 [ext_resource path="res://Images/SSBU_Box_Art.jpg" type="Texture" id=9]
-[ext_resource path="res://DefaultTheme.tres" type="Theme" id=10]
+[ext_resource path="res://Images/Clu_Clu_Land_Box_Art.jpg" type="Texture" id=10]
+[ext_resource path="res://Images/Contra_Box_Art.jpg" type="Texture" id=11]
+[ext_resource path="res://Images/Ice_Climber_Box_Art.jpg" type="Texture" id=12]
+[ext_resource path="res://Images/Mega_Man_Box_Art.jpg" type="Texture" id=13]
+[ext_resource path="res://Images/Mega_Man_2_Box_Art.jpg" type="Texture" id=14]
+[ext_resource path="res://Images/Mike_Tyson_Punch_Out_Box_Art.jpg" type="Texture" id=15]
+[ext_resource path="res://Images/Super_Mario_Bros_Nes_Remix_Box_Art.png" type="Texture" id=16]
+[ext_resource path="res://Images/Twinbee_Box_art.jpg" type="Texture" id=17]
+[ext_resource path="res://Images/Kid_Icarus_Box_Art.jpg" type="Texture" id=18]
+[ext_resource path="res://Images/The_Legend_Of_Zelda_Box_Art.png" type="Texture" id=19]
+[ext_resource path="res://Images/F_Zero_Box_Art.png" type="Texture" id=20]
+[ext_resource path="res://Images/Star_Fox_Box_Art.jpg" type="Texture" id=21]
+[ext_resource path="res://Images/Super_Mario_Kart_Box_Art.jpeg" type="Texture" id=22]
+[ext_resource path="res://Images/Super_Metroid_Box_Art.png" type="Texture" id=23]
+[ext_resource path="res://Images/The_Legend_Of_Zelda_A_Link_To_The_Past_Box_Art.jpg" type="Texture" id=24]
+[ext_resource path="res://Images/Arcade_Archives_Punch_Out_Box_Art.jpg" type="Texture" id=25]
+[ext_resource path="res://Images/Sonic_The_Hedgehog_2_Box_Art.jpg" type="Texture" id=26]
+[ext_resource path="res://Images/Fantasy_Strike_Box_Art.jpg" type="Texture" id=27]
+[ext_resource path="res://Images/NES_Remix_Box_Art.jpg" type="Texture" id=28]
+[ext_resource path="res://Images/NES_Remix_2_Box_Art.jpg" type="Texture" id=29]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=30]
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -25,25 +45,25 @@ texture = ExtResource( 3 )
 
 [node name="Super_Mario_Bros_Box_Art" type="Sprite" parent="."]
 visible = false
-position = Vector2( 250, 300 )
+position = Vector2( 255.525, 265.009 )
 scale = Vector2( 0.34775, 0.364 )
 texture = ExtResource( 4 )
 
 [node name="Tetris_Box_Art" type="Sprite" parent="."]
 visible = false
-position = Vector2( 245.453, 298.87 )
+position = Vector2( 252.819, 258.355 )
 scale = Vector2( 0.2782, 0.2912 )
 texture = ExtResource( 5 )
 
 [node name="Metroid_Box_Art" type="Sprite" parent="."]
 visible = false
-position = Vector2( 244.532, 289.662 )
+position = Vector2( 255.582, 260.196 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 6 )
 
 [node name="Bomberman_R_Box_Art" type="Sprite" parent="."]
 visible = false
-position = Vector2( 246.373, 285.09 )
+position = Vector2( 255.581, 261.149 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 7 )
 
@@ -55,9 +75,129 @@ texture = ExtResource( 8 )
 
 [node name="SSBU_Box_Art" type="Sprite" parent="."]
 visible = false
-position = Vector2( 249.16, 283.248 )
+position = Vector2( 251.002, 257.466 )
 scale = Vector2( 0.175, 0.175 )
 texture = ExtResource( 9 )
+
+[node name="Clu_Clu_Land_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252.843, 259.307 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="Contra_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 251.002, 255.624 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
+
+[node name="Ice_Climber_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 259.307 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="Mega_Man_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 259.307 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 13 )
+
+[node name="Mega_Man_2_Box_Art2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 261.149 )
+scale = Vector2( 0.255, 0.255 )
+texture = ExtResource( 14 )
+
+[node name="Mike_Tyson_Punch_Out_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 247.319, 262.991 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 15 )
+
+[node name="Super_Mario_Bros_Nes_Remix_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 247.319, 262.99 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="Twinbee_Box_art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 248.16, 255.624 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 17 )
+
+[node name="Kid_Icarus_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 255.624 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 18 )
+
+[node name="The_Legend_Of_Zelda_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 245.477, 257.466 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 19 )
+
+[node name="F_Zero_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 255.624 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 20 )
+
+[node name="Star_Fox_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 248.239, 256.545 )
+scale = Vector2( 0.36, 0.36 )
+texture = ExtResource( 21 )
+
+[node name="Super_Mario_Kart_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 241.794, 253.782 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 22 )
+
+[node name="Super_Metroid_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 241.794, 253.782 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 23 )
+
+[node name="The_Legend_Of_Zelda_A_Link_To_The_Past_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 247.319, 261.149 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 24 )
+
+[node name="Arcade_Archives_Punch_Out_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 247.319, 259.307 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 25 )
+
+[node name="Sonic_The_Hedgehog_2_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 254.685, 262.991 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 26 )
+
+[node name="Fantasy_Strike_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 249.16, 262.07 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 27 )
+
+[node name="NES_Remix_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 239.952, 249.178 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 28 )
+
+[node name="NES_Remix_2_Box_Art" type="Sprite" parent="."]
+visible = false
+position = Vector2( 238.111, 251.02 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 29 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 500.0
@@ -65,7 +205,7 @@ margin_top = 150.0
 margin_right = 928.0
 margin_bottom = 469.0
 rect_min_size = Vector2( 430, 320 )
-theme = ExtResource( 10 )
+theme = ExtResource( 30 )
 text = "Sample Text"
 autowrap = true
 
@@ -75,7 +215,7 @@ margin_top = 492.0
 margin_right = 140.0
 margin_bottom = 532.0
 rect_min_size = Vector2( 824, 100 )
-theme = ExtResource( 10 )
+theme = ExtResource( 30 )
 columns = 2
 
 [node name="Button" type="Button" parent="GridContainer"]

@@ -54,4 +54,4 @@ func _on_Button2_pressed():
 	elif $Catagory_2.text == ("Game Challenge"):
 		get_tree().change_scene("res://Game_Challenge.tscn")
 
-# Code by Michael Crabbe
+#code by Michael Crabbe

@@ -67,3 +67,5 @@ func _on_Ink_pressed():
 
 func _on_Squid_pressed():
 	get_tree().change_scene("res://Main_Menu.tscn")
+
+#code by Michael Crabbe
