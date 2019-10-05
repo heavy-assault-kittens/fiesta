@@ -93,6 +93,28 @@ visible = false
 margin_left = 774.0
 margin_right = 774.0
 margin_bottom = 59.0
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 100.0
+margin_top = 390.0
+margin_right = 925.0
+margin_bottom = 486.0
+rect_min_size = Vector2( 825, 96 )
+theme = ExtResource( 4 )
+text = "Sample Text"
+align = 1
+autowrap = true
+clip_text = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 100.0
+margin_top = 390.0
+margin_right = 925.0
+margin_bottom = 486.0
+rect_min_size = Vector2( 825, 96 )
+theme = ExtResource( 4 )
+text = "Reveal Answer"
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
 [connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_when_Button_pressed"]

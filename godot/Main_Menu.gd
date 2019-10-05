@@ -16,11 +16,11 @@ func _on_Node_ready():
 func _when_Node_ready_():
 	randomize()
 	var words = []
-	words.append ("Easy Question") #demo ready
-	words.append ("Cruel Question") #demo ready
-	words.append ("Multiple Choice")
+	words.append ("Easy Question") #demo ready 
+	words.append ("Cruel Question") #done
+	words.append ("Multiple Choice") #
 	words.append ("Fatal Frame") #demo ready
-	words.append ("Game Challenge") #demo ready
+	words.append ("Game Challenge") #done
 	words.append ("Rhythm Heaven") #demo ready
 	#words.append ("Find Mii")
 	var word_index = randi() % words.size()

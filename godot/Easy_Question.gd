@@ -1,6 +1,6 @@
 extends Node
 
-var score = 0
+
 
 func _on_Node_ready():
 	randomize()
