@@ -101,7 +101,7 @@ theme = ExtResource( 3 )
 text = "Sample Text"
 align = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="Answer" type="Button" parent="."]
 margin_left = 100.0
 margin_top = 390.0
 margin_right = 925.0
@@ -112,3 +112,4 @@ text = "Reveal Answer"
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
 [connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Answer" to="." method="_on_Answer_pressed"]

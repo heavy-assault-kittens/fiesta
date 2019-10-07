@@ -128,6 +128,75 @@ margin_right = 824.0
 margin_bottom = 204.0
 rect_min_size = Vector2( 410, 100 )
 
+[node name="Zelda" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Nine" type="Button" parent="Zelda"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Three" type="Button" parent="Zelda"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Eight" type="Button" parent="Zelda"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Six" type="Button" parent="Zelda"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Yoshi" type="GridContainer" parent="."]
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Cookie" type="Button" parent="Yoshi"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Puyo" type="Button" parent="Yoshi"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Atack" type="Button" parent="Yoshi"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Turbo" type="Button" parent="Yoshi"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
 [node name="Wrong_Answer" type="Label" parent="."]
 margin_left = 362.0
 margin_right = 662.0
@@ -146,3 +215,11 @@ theme = ExtResource( 4 )
 [connection signal="pressed" from="Splatoon_2/Bottom" to="." method="_on_Bottom_pressed"]
 [connection signal="pressed" from="Splatoon_2/Ink" to="." method="_on_Ink_pressed"]
 [connection signal="pressed" from="Splatoon_2/Squid" to="." method="_on_Squid_pressed"]
+[connection signal="pressed" from="Zelda/Nine" to="." method="_on_Nine_pressed"]
+[connection signal="pressed" from="Zelda/Three" to="." method="_on_Three_pressed"]
+[connection signal="pressed" from="Zelda/Eight" to="." method="_on_Eight_pressed"]
+[connection signal="pressed" from="Zelda/Six" to="." method="_on_Six_pressed"]
+[connection signal="pressed" from="Yoshi/Cookie" to="." method="_on_Cookie_pressed"]
+[connection signal="pressed" from="Yoshi/Puyo" to="." method="_on_Puyo_pressed"]
+[connection signal="pressed" from="Yoshi/Atack" to="." method="_on_Atack_pressed"]
+[connection signal="pressed" from="Yoshi/Turbo" to="." method="_on_Turbo_pressed"]
