@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Node.gd" type="Script" id=1]
 [ext_resource path="res://Images/Backdrop.jpg" type="Texture" id=2]
@@ -9,7 +9,8 @@
 [ext_resource path="res://Images/Lan.png" type="Texture" id=7]
 [ext_resource path="res://Images/Polite.jpeg" type="Texture" id=8]
 [ext_resource path="res://Images/Slug.png" type="Texture" id=9]
-[ext_resource path="res://DefaultTheme.tres" type="Theme" id=10]
+[ext_resource path="res://Cruel_Theme.tres" type="Theme" id=10]
+[ext_resource path="res://DefaultTheme.tres" type="Theme" id=11]
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -58,27 +59,44 @@ position = Vector2( 490.73, 274.893 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 9 )
 
-[node name="GridContainer" type="GridContainer" parent="."]
-margin_left = 100.0
+[node name="Label" type="Label" parent="."]
+margin_left = 358.0
 margin_top = 492.0
-margin_right = 924.0
+margin_right = 668.0
 margin_bottom = 592.0
-rect_min_size = Vector2( 824, 100 )
+rect_min_size = Vector2( 310, 100 )
 theme = ExtResource( 10 )
-columns = 2
+align = 1
+valign = 1
+autowrap = true
 
-[node name="Button" type="Button" parent="GridContainer"]
-margin_right = 410.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 410, 100 )
+[node name="Button3" type="Button" parent="."]
+margin_left = 358.0
+margin_top = 492.0
+margin_right = 668.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 310, 100 )
+theme = ExtResource( 11 )
+text = "Reveal Answer"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 47.0
+margin_top = 492.0
+margin_right = 357.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 310, 100 )
+theme = ExtResource( 11 )
 text = "Correct"
 
-[node name="Button2" type="Button" parent="GridContainer"]
-margin_left = 414.0
-margin_right = 824.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 410, 100 )
+[node name="Button2" type="Button" parent="."]
+margin_left = 669.0
+margin_top = 492.0
+margin_right = 979.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 310, 100 )
+theme = ExtResource( 11 )
 text = "Incorrect"
 [connection signal="ready" from="." to="." method="_on_Node_ready"]
-[connection signal="pressed" from="GridContainer/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
