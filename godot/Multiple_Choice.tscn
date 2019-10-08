@@ -164,6 +164,7 @@ margin_bottom = 204.0
 rect_min_size = Vector2( 410, 100 )
 
 [node name="Yoshi" type="GridContainer" parent="."]
+editor/display_folded = true
 visible = false
 margin_left = 100.0
 margin_top = 392.0
@@ -197,6 +198,75 @@ margin_right = 824.0
 margin_bottom = 204.0
 rect_min_size = Vector2( 410, 100 )
 
+[node name="GBA" type="GridContainer" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Red" type="Button" parent="GBA"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Polarium" type="Button" parent="GBA"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Mega" type="Button" parent="GBA"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Memories" type="Button" parent="GBA"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="James" type="GridContainer" parent="."]
+visible = false
+margin_left = 100.0
+margin_top = 392.0
+margin_right = 924.0
+margin_bottom = 596.0
+rect_min_size = Vector2( 824, 200 )
+theme = ExtResource( 3 )
+columns = 2
+
+[node name="Metroid" type="Button" parent="James"]
+margin_right = 410.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Punch" type="Button" parent="James"]
+margin_left = 414.0
+margin_right = 824.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Pilot" type="Button" parent="James"]
+margin_top = 104.0
+margin_right = 410.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
+[node name="Fzero" type="Button" parent="James"]
+margin_left = 414.0
+margin_top = 104.0
+margin_right = 824.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 410, 100 )
+
 [node name="Wrong_Answer" type="Label" parent="."]
 margin_left = 362.0
 margin_right = 662.0
@@ -223,3 +293,11 @@ theme = ExtResource( 4 )
 [connection signal="pressed" from="Yoshi/Puyo" to="." method="_on_Puyo_pressed"]
 [connection signal="pressed" from="Yoshi/Atack" to="." method="_on_Atack_pressed"]
 [connection signal="pressed" from="Yoshi/Turbo" to="." method="_on_Turbo_pressed"]
+[connection signal="pressed" from="GBA/Red" to="." method="_on_Red_pressed"]
+[connection signal="pressed" from="GBA/Polarium" to="." method="_on_Polarium_pressed"]
+[connection signal="pressed" from="GBA/Mega" to="." method="_on_Mega_pressed"]
+[connection signal="pressed" from="GBA/Memories" to="." method="_on_Memories_pressed"]
+[connection signal="pressed" from="James/Metroid" to="." method="_on_Metroid_pressed"]
+[connection signal="pressed" from="James/Punch" to="." method="_on_Punch_pressed"]
+[connection signal="pressed" from="James/Pilot" to="." method="_on_Pilot_pressed"]
+[connection signal="pressed" from="James/Fzero" to="." method="_on_Fzero_pressed"]

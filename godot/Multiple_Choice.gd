@@ -5,10 +5,12 @@ var fox = 2
 var Ink = 3
 var zelda = 4
 var yoshi = 5
+var gba = 6
+var james = 7
 
 func _on_Node_ready():
 	randomize()
-	var text = randi()%6+1
+	var text = randi()%7+1
 	if text == Pokemon:
 		print("pokemon")
 		$Question.text = ("Which Pokémon can you get by evolving Nincada?")
@@ -49,6 +51,21 @@ func _on_Node_ready():
 		$Yoshi/Atack.text = ("Tetris Attack")
 		$Yoshi/Turbo.text = ("Super Puzzle Fighter II Turbo")
 		$Yoshi.show()
+	elif text == gba:
+		print("gba")
+		$Question.text = ("The Nintendo DS was released three years after the Game Boy Advance and once it became popular many sequels to GBA games were made for the DS. Which of these Game Boy Advance games was a sequel to a Nintendo DS game instead of the other way around?")
+		$GBA/Mega.text = ("Mega Man Battle Network 6")
+		$GBA/Memories.text = ("Kingdom Hearts: Chain Of Memories")
+		$GBA/Polarium.text = ("Polarium Advanced")
+		$GBA/Red.text = ("Pokemon Mystery Dungeon: Red Rescue Team")
+		$GBA.show()
+	elif text == james:
+		print("james")
+		$Question.text = ("James McCloud is best known as the father of Star Fox protagonist Fox McCloud, but a character with the same name appears in another Nintendo game series. Which of these series does he appear in?")
+		$James/Fzero.text = ("F-Zero")
+		$James/Metroid.text = ("Metroid")
+		$James/Pilot.text = ("Pilotwings")
+		$James/Punch.text = ("Punch-Out!!")
 
 func _on_Shedinja_pressed():
 	get_tree().change_scene("res://Main_Menu.tscn")
@@ -109,3 +126,28 @@ func _on_Atack_pressed():
 
 func _on_Turbo_pressed():
 	$Wrong_Answer.text = ("Wrong Answer")
+
+
+func _on_Red_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Polarium_pressed():
+	get_tree().change_scene("res://Main_Menu.tscn")
+
+func _on_Mega_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Memories_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Metroid_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Punch_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Pilot_pressed():
+	$Wrong_Answer.text = ("Wrong Answer!")
+
+func _on_Fzero_pressed():
+	get_tree().change_scene("res://Main_Menu.tscn")

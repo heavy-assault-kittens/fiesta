@@ -16,12 +16,12 @@ func _on_Node_ready():
 func _when_Node_ready_():
 	randomize()
 	var words = []
-	words.append ("Easy Question") #demo ready 
+	words.append ("Easy Question") #done
 	words.append ("Cruel Question") #done
 	words.append ("Multiple Choice") #
-	words.append ("Fatal Frame") #demo ready
+	words.append ("Fatal Frame") #
 	words.append ("Game Challenge") #done
-	words.append ("Rhythm Heaven") #demo ready
+	words.append ("Rhythm Heaven") #
 	#words.append ("Find Mii")
 	var word_index = randi() % words.size()
 	$Catagory_2.text = words[word_index]
